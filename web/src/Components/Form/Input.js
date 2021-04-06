@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Input.module.css'
 
-function Input({label, name, type}) {
+function Input({label, name, type, value, onChange, error, onBlur}) {
    return (
       <div className={style.wrapper}>
          <label htmlFor={name} className={style.label}>
@@ -11,9 +11,12 @@ function Input({label, name, type}) {
             name={name} 
             id={name} 
             type={type} 
-            className={style.input} 
+            className={style.input}
+            value={value}
+            onChange={onChange}
+            onBlur={onBlur}
          />
-         <p className={style.error}>Error</p>
+         {error && <p className={style.error}>{error}</p>}
       </div>
    )
 }

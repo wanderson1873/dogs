@@ -5,6 +5,10 @@
    margin: 1rem;
 }
 
+.photoSingle.form {
+   margin: 1rem 0;
+}
+
 .textarea {
    display: block;
    width: 100%;
@@ -41,8 +45,8 @@
    stroke: #fb1;
 }
 
-.button:hover svg g,
-.button:focus svg g {
+.button:hover svg path g,
+.button:focus svg path g {
    animation: latir 0.6 infinite;
 }
 

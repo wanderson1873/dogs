@@ -36,14 +36,14 @@ const LoginPasswordReset = () => {
    }
 
    return (
-      <div>
+      <section className="animeLeft">
          <h1 className="title">Resete a Senha</h1>
          <form onSubmit={handleSubmit}>
             <Input label="Nova Senha" type="password" name="password" {...password}/>
             {loading ? <Button disabled>Resetando...</Button> : <Button>Resetar</Button> }
          </form>
          <Error error={error} />
-      </div>
+      </section>
    )
 }
 

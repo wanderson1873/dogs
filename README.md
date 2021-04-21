@@ -37,7 +37,7 @@
 
 Dogs é uma rede social desenvolvida para cachorros. O usuário pode postar fotos, visualizar fotos de outros usuários, comentar na fotos, compartilhar as fotos.
 
-Dogs foi desenvolvido no curso de React completo da [Origamid](https://www.origamid.com/curso/react-completo/).
+Dogs foi desenvolvido no curso de React da [Origamid](https://www.origamid.com/curso/react-completo/).
 
 <br>
 

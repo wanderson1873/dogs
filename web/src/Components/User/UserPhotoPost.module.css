@@ -3,27 +3,28 @@
    grid-template-columns: 1fr 1fr;
    gap: 2rem;
    margin-bottom: 2rem;
-}
-
-@media (max-width: 40rem) {
+ }
+ 
+ @media (max-width: 40rem) {
    .photoPost {
-      grid-template-columns: 1fr;
+     grid-template-columns: 1fr;
    }
-}
-
-.file {
+ }
+ 
+ .file {
    margin-bottom: 1rem;
-}
-
-.preview {
+ }
+ 
+ .preview {
    border-radius: 1rem;
    background-size: cover;
    background-position: center center;
-}
-
-.preview::after {
+ }
+ 
+ .preview::after {
    content: '';
    display: block;
-   height: 0;
+   height: 0px;
    padding-bottom: 100%;
-}
+ }
+ 

@@ -33,7 +33,9 @@ const Feed = ({user}) => {
 
    return (
       <div>
-         {modalPhoto && <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />}
+         {modalPhoto && (
+            <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
+         )}
          {pages.map((page) => (
             <FeedPhotos 
                key={page}
@@ -43,6 +45,17 @@ const Feed = ({user}) => {
                setInfinite={setInfinite}
             />
          ))}
+         {!infinite && !user && (
+            <p
+               style={{ 
+                  textAlign: 'center',
+                  padding: '2rem 0 4rem 0',
+                  color: '#888',
+               }}
+            >
+               Não existe mais postagens.
+            </p>
+         )}
       </div>
    )
 }

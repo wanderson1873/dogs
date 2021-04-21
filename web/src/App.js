@@ -30,7 +30,6 @@ function App() {
           <Footer />
         </UserStorage>
       </BrowserRouter>
-      
     </div>
   )
 }

@@ -14,7 +14,7 @@ const UserPhotoPost = () => {
    const peso = useForm('number');
    const idade = useForm('number');
    const [img, setImg] = React.useState({});
-   const { data, error, loading, request} = useFetch();
+   const { data, error, loading, request } = useFetch();
    const navigate = useNavigate();
 
    React.useEffect(() => {
@@ -47,16 +47,27 @@ const UserPhotoPost = () => {
             <Input label="Nome" type="text" name="nome" {...nome}/>
             <Input label="Peso" type="number" name="peso" {...peso}/>
             <Input label="Idade" type="number" name="idade" {...idade}/>
-            <input className={style.file} type="file" name="img" id="img" onChange={handleImgChange} />
-            {loading ? <Button disabled>Enviando...</Button> : <Button>Enviar</Button>}
-         <Error error={error} />
+            <input 
+               className={style.file}
+               type="file"    
+               name="img" 
+               id="img" 
+               onChange={handleImgChange} 
+            />
+            {loading ? (
+               <Button disabled>Enviando...</Button> 
+            ) :  (
+               <Button>Enviar</Button>
+            )}
+            <Error error={error} />
          </form>
          <div>
             {img.preview && (
-            <div 
-               className={style.preview} 
-               style={{background: `url('${img.preview}')`}}>
-            </div>)}
+               <div 
+                  className={style.preview} 
+                  style={{ backgroundImage: `url('${img.preview}')` }}>
+               </div>
+            )}
          </div>
       </section>
    )

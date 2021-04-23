@@ -26,12 +26,12 @@ const FeedPhotos = ({page, setInfinite, setModalPhoto, user}) => {
    return (
       <ul className={`${style.feed} animeLeft`}>
          {data.map((photo) => (
-         <FeedPhotosItem 
-         key={photo.id} 
-         photo={photo} 
-         setModalPhoto={setModalPhoto}
-      />
-      ))}
+            <FeedPhotosItem 
+            key={photo.id} 
+            photo={photo} 
+            setModalPhoto={setModalPhoto}
+         />
+         ))}
       </ul>
    )
    else return null

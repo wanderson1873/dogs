@@ -29,9 +29,9 @@ const LoginCreate = () => {
       <section className="animeLeft">
          <h1 className="title">Cadastre-se</h1>
          <form onSubmit={handleSubmit}>
-            <Input label="Usuário" name="username" type="text" {...username}/>
-            <Input label="Email" name="email" type="email" {...email}/>
-            <Input label="Senha" name="password" type="password" {...password}/>
+            <Input label="Usuário" name="username" type="text" placeholder="Usuário" {...username}/>
+            <Input label="Email" name="email" type="email" placeholder="email@exemplo.com" {...email}/>
+            <Input label="Senha" name="password" type="password" placeholder="Sua senha" {...password}/>
             {loading ? (
                <Button disabled>Cadastrando...</Button>
                ) : (

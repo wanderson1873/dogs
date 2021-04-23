@@ -53,7 +53,7 @@ const Feed = ({user}) => {
                   color: '#888',
                }}
             >
-               Não existe mais postagens.
+               Não existem mais postagens.
             </p>
          )}
       </div>

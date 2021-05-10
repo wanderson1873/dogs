@@ -1,10 +1,5 @@
 # Dogs
 
-<img align="center" src=".github/capa_happy.png">
-
-<br>
-<br>
-
 <p>
   <img src="https://img.shields.io/badge/made%20by-Wanderson%20Oliveira-04D361?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wanderson1873/dogs?color=04D361&style=flat-square">
@@ -55,17 +50,13 @@ Dogs foi desenvolvido no curso de React da [Origamid](https://www.origamid.com/c
 <br>
 
 <p align="center">
-  <img src=".github/device.png" alt="Página inicial">
+  <img src=".github/cao-amarelo.jpg" alt="Página inicial">
 </p>
 
 ## Tecnologias
 
   - [ReactJS](https://reactjs.org/)
-  - [Typescript](https://www.typescriptlang.org/)
-
-  - [Leaflet](https://leafletjs.com/)
-  - [React Leaflet](https://react-leaflet.js.org/)
-  - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
+  - [JavaScr](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 <br>
 
@@ -83,7 +74,7 @@ Clone o repositório com:
 > cd dogs/web
 
 > yarn install
-// or
+// or 
 > npm install
 ```
 
